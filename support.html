@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小鱼塘支持 · Little Pond Support</title>
+<style>
+  :root { --bg: #fbfaf7; --text: #1d2327; --muted: #5d6b72; --line: #e2e6e3; --accent: #1f7a6d; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1a1c; --text: #e6ecea; --muted: #9aaaa8; --line: #24363a; --accent: #5cc2b0; --card: #152326; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans", "Helvetica Neue", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 72px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; margin-bottom: 32px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 12px; }
+  .muted { color: var(--muted); }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 8px 0 2px; }
+  a { color: var(--accent); }
+  section + section { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="#zh-hans">简体中文</a><a href="#en">English</a><a href="#ja">日本語</a><a href="#zh-hant">繁體中文</a></nav>
+
+  <section id="zh-hans" lang="zh-Hans">
+    <h1>小鱼塘支持</h1>
+    <p class="muted">住在桌面上的一方鱼塘，会随今天的天气和时间变化。</p>
+    <h2>常见问题</h2>
+    <details open>
+      <summary>打开后没有窗口，也不在 Dock 里？</summary>
+      <p>小鱼塘就在桌面上：把窗口移开就能看到鱼塘。它的设置在屏幕顶部菜单栏的鱼形图标里。如果菜单栏太挤、图标被刘海挡住或被隐藏，再次打开小鱼塘（在“应用程序”文件夹或启动台里）就会弹出设置窗口。</p>
+    </details>
+    <details>
+      <summary>怎么喂鱼、和鱼互动？</summary>
+      <p>点击桌面空白处（没有窗口遮挡的地方）会撒下鱼食；按住拖动能拨动水面；鼠标停在水面上，好奇的鱼会凑过来。菜单栏里还可以放养指定品种的锦鲤和金鱼，或者捞走一条。</p>
+    </details>
+    <details>
+      <summary>天气或城市不对？不想显示天气？</summary>
+      <p>默认按 Mac 的系统时区估计城市。打开 设置 › 天气 › 位置来源，选择“使用我的位置”（需要允许定位），或者“手动选择城市”。不需要天气的话，关闭“显示真实天气”：小鱼塘就不再联网，鱼塘保持你选的天气。</p>
+    </details>
+    <details>
+      <summary>会不会很耗电？</summary>
+      <p>鱼塘用 Metal 绘制。桌面被窗口完全挡住、使用全屏 App、锁屏或显示器睡眠时会自动暂停；用电池或开启低电量模式时会降低帧率和画质；长时间没有操作时也会自动降帧。你还可以在 设置 › 性能 里调低帧率和画质。</p>
+    </details>
+    <details>
+      <summary>开机自动启动？</summary>
+      <p>设置 › 通用 › 登录时自动启动。默认是关闭的。</p>
+    </details>
+    <details>
+      <summary>支持哪些语言？</summary>
+      <p>简体中文、繁體中文、English 和日本語，跟随系统语言；其他语言显示英文。</p>
+    </details>
+    <details>
+      <summary>如何退出或卸载？</summary>
+      <p>点菜单栏的鱼形图标 › 退出小鱼塘。卸载时先退出，再把“应用程序”文件夹里的小鱼塘拖到废纸篓。</p>
+    </details>
+    <h2>联系</h2>
+    <p>遇到问题或有建议，请发邮件到 <a href="mailto:Sehlani042@gmail.com">Sehlani042@gmail.com</a>，最好附上 macOS 版本和问题的截图。</p>
+    <p class="muted">天气数据由 <a href="https://open-meteo.com/">Open-Meteo.com</a> 提供（CC BY 4.0）。<a href="privacy.html#zh-hans">隐私政策</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h1>Little Pond Support</h1>
+    <p class="muted">A pond that lives on your desktop and changes with today’s weather.</p>
+    <details open>
+      <summary>Where is the app?</summary>
+      <p>The pond is your desktop: move windows aside to see it. Settings are under the fish icon in the menu bar. If the icon is hidden (for example behind the notch), open Little Pond again from Applications or Launchpad to bring up the Settings window.</p>
+    </details>
+    <details>
+      <summary>How do I feed the fish?</summary>
+      <p>Click an empty area of the desktop to drop food, click and drag to stir the water, and rest the pointer on the water to attract curious fish.</p>
+    </details>
+    <details>
+      <summary>The weather or city is wrong, or I don’t want weather</summary>
+      <p>By default the city is estimated from your Mac’s time zone. In Settings › Weather, choose Use My Location or Choose a City. To go without weather, turn off Show Real Weather: Little Pond then makes no network requests and keeps the weather you pick.</p>
+    </details>
+    <details>
+      <summary>Battery use</summary>
+      <p>The pond pauses automatically when the desktop is covered, in full-screen apps, on the lock screen and while displays sleep, and it lowers its frame rate on battery power.</p>
+    </details>
+    <h2>Contact</h2>
+    <p><a href="mailto:Sehlani042@gmail.com">Sehlani042@gmail.com</a> · <a href="privacy.html#en">Privacy Policy</a> · Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a></p>
+  </section>
+
+  <section id="ja" lang="ja">
+    <h1>ちいさな池 サポート</h1>
+    <p class="muted">今日の天気で移り変わる池が、あなたのデスクトップに。</p>
+    <details open>
+      <summary>Appはどこにありますか？</summary>
+      <p>池はデスクトップそのものです。ウインドウをよけると見えます。設定はメニューバーの魚のアイコンにあります。アイコンが隠れているとき（ノッチの裏など）は、“アプリケーション”フォルダやLaunchpadからもう一度開くと設定ウインドウが表示されます。</p>
+    </details>
+    <details>
+      <summary>エサのあげ方は？</summary>
+      <p>デスクトップの空いている所をクリックするとエサをまきます。ドラッグで水面をかき混ぜ、ポインタを水面に止めると好奇心旺盛な魚が寄ってきます。</p>
+    </details>
+    <details>
+      <summary>天気や都市が違う／天気を表示したくない</summary>
+      <p>最初はMacのタイムゾーンから都市を推定します。設定 › 天気 で“現在地を使う”か“都市を選ぶ”を選んでください。天気が不要なら“実際の天気を表示”をオフにすると、通信をせず選んだ天気のままになります。</p>
+    </details>
+    <details>
+      <summary>バッテリーへの影響は？</summary>
+      <p>デスクトップが隠れたとき、フルスクリーンApp使用中、画面ロック中、ディスプレイのスリープ中は自動で一時停止し、バッテリー使用時はフレームレートを下げます。</p>
+    </details>
+    <h2>お問い合わせ</h2>
+    <p><a href="mailto:Sehlani042@gmail.com">Sehlani042@gmail.com</a> · <a href="privacy.html#ja">プライバシーポリシー</a> · 気象データ提供：<a href="https://open-meteo.com/">Open-Meteo.com</a></p>
+  </section>
+
+  <section id="zh-hant" lang="zh-Hant">
+    <h1>小魚塘支援</h1>
+    <p class="muted">住在桌面上的一方魚塘，會隨今天的天氣和時間變化。</p>
+    <details open>
+      <summary>打開後沒有視窗，也不在 Dock 裡？</summary>
+      <p>小魚塘就在桌面上：把視窗移開就能看到魚塘。設定在螢幕上方選單列的魚形圖像裡。如果圖像被瀏海擋住或被隱藏，再次打開小魚塘（在「應用程式」檔案夾或啟動台裡）就會出現設定視窗。</p>
+    </details>
+    <details>
+      <summary>怎麼餵魚？</summary>
+      <p>按一下桌面空白處會撒下飼料；按住拖移能撥動水面；指標停在水面上，好奇的魚會湊過來。</p>
+    </details>
+    <details>
+      <summary>天氣或城市不對？不想顯示天氣？</summary>
+      <p>預設依 Mac 的系統時區推估城市。在 設定 › 天氣 選擇「使用我的位置」或「手動選擇城市」。不需要天氣的話，關閉「顯示真實天氣」：小魚塘就不再連網，魚塘保持你選的天氣。</p>
+    </details>
+    <details>
+      <summary>會不會很耗電？</summary>
+      <p>桌面被擋住、使用全螢幕 App、鎖定螢幕或顯示器睡眠時會自動暫停；使用電池時會降低影格速率和畫質。</p>
+    </details>
+    <h2>聯絡</h2>
+    <p><a href="mailto:Sehlani042@gmail.com">Sehlani042@gmail.com</a> · <a href="privacy.html#zh-hant">隱私權政策</a> · 天氣資料來自 <a href="https://open-meteo.com/">Open-Meteo.com</a></p>
+  </section>
+</main>
+</body>
+</html>
